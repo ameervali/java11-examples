@@ -1,4 +1,4 @@
-nod {
+node {
     try {
         properties([parameters([choice(choices: ['scripted', 'master', 'declarative'], description: 'branch to be built', name: 'BRANCH_TO_BUILD')])])
         stage('git') {
